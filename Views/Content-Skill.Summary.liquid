@@ -1,0 +1,12 @@
+﻿<div class="col-md-6 animate-box">
+{% assign percentage = Model.ContentItem.Content.Skill.Percentage.Value %}
+              <div class="progress-wrap ftco-animate">
+                <h3>{{ Model.ContentItem.Content.TitlePart.Title }}</h3>
+                <div class="progress">
+                  <div class="progress-bar color-1" role="progressbar" aria-valuenow="{{percentage}}"
+                       aria-valuemin="0" aria-valuemax="100" style="width:{{percentage}}%">
+                    <span>{{percentage}}%</span>
+                  </div>
+                </div>
+              </div>
+            </div>

@@ -1,0 +1,8 @@
+﻿<div class="sidebar-box ftco-animate">
+    <h3 class="heading-sidebar">Categories</h3>
+              <ul class="categories">
+                {% for category in Content["alias:categories"].Content.TaxonomyPart.Terms %}
+                <li><a href="#">{{category.TitlePart.Title}} <span>(12)</span></a></li>
+                {% endfor %}
+              </ul>
+</div>

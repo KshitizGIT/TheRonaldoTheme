@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Views\Content1-Skill.Detail.liquid" />
+    <EmbeddedResource Remove="Views\Content1-Skill.Summary.liquid" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OrchardCore.Media.Abstractions" Version="1.0.0-rc2-13450" />
+    <PackageReference Include="OrchardCore.ShortCodes" Version="1.0.0-rc2-13450" />
+    <PackageReference Include="OrchardCore.Theme.Targets" Version="1.0.0-rc2-13450" />
+    <PackageReference Include="OrchardCore.ContentManagement" Version="1.0.0-rc2-13450" />
+    <PackageReference Include="OrchardCore.DisplayManagement" Version="1.0.0-rc2-13450" />
+    <PackageReference Include="OrchardCore.ResourceManagement" Version="1.0.0-rc2-13450" />
+  </ItemGroup>
+
+</Project>

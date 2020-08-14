@@ -1,0 +1,22 @@
+﻿{% assign items = Model.ContentItem.Content.BagPart.ContentItems %}
+<div id="page-4" class= "page four">
+    <h2 class="heading">Awards</h2>
+    {% for e in items %}
+        <div class="resume-wrap d-flex ftco-animate">
+            <div class="icon d-flex align-items-center justify-content-center">
+                <span class="flaticon-ideas"></span>
+            </div>
+            <div class="text pl-3">
+                {% assign eduEndDate = 'Current' %}
+                {% if e.Milestone.EndDate.Value != null %}
+                    {% assign eduEndDate = e.Milestone.EndDate.Value | date: "%Y" %}
+                {% endif %}
+                <span class="date">{{e.Milestone.StartDate.Value | date: "%Y" }} - {{eduEndDate}}</span>
+                <h2>{{e.Milestone.Title.Text }}</h2>
+                <span class="position">{{e.Milestone.Authority.Text}}</span>
+                <p>{{e.Milestone.Description.Text}}</p>
+            </div>
+        </div>
+
+    {% endfor %}
+</div>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="{{Culture.Name}}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% page_title Site.SiteName %}</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    {% style name: "TheRonaldoTheme-vendor-openiconic", at: "Head"  %}
+    {% style src:"~/TheRonaldoTheme/css/animate.css", at: "Head"  %}
+    {% style src:"~/TheRonaldoTheme/css/owl.carousel.min.css", at: "Head"  %}
+    {% style src:"~/TheRonaldoTheme/css/owl.theme.default.min.css", at: "Head"  %}
+    {% style name:"theronaldotheme-vendor-magnificpopup" , version: "1.1", at: "Head"  %}
+    {% style src:"~/TheRonaldoTheme/css/aos.css" , at: "Head" %}
+    {% style src:"~/TheRonaldoTheme/css/ionicons.min.css", at: "Head"  %}
+    {% style src:"~/TheRonaldoTheme/css/flaticon.css", at: "Head"  %}
+    {% style src:"~/TheRonaldoTheme/css/icomoon.css", at: "Head"  %}
+    {% style src:"~/TheRonaldoTheme/css/style.css", at: "Head"  %}
+
+    {% resources type: "Meta" %}
+
+	{% render_section "BlogMeta", required: false %}
+    {% resources type: "HeadLink" %}
+    {% resources type: "HeadScript" %}
+    {% resources type: "Stylesheet" %}
+
+  {% script name: "theronaldotheme-vendor-jquery", version: "3.2.1", at: "Foot" %}
+  {% script name: "theronaldotheme-vendor-jquery-migrate", version: "3.0.1", at: "Foot" %}
+  {% script name: "theronaldotheme-vendor-popper", at: "Foot" %}
+  {% script name: "theronaldotheme-vendor-bootstrap", version: "4.3.1", at: "Foot" %}
+  {% script name: "theronaldotheme-vendor-jqueryeasing", version: "1.3", at: "Foot" %}
+  {% script name: "theronaldotheme-vendor-waypoints", version: "4.0", at: "Foot" %}
+  {% script name: "theronaldotheme-vendor-stellar", at: "Foot" %}
+  {% script name:  "theronaldotheme-vendor-carousel", at: "Foot" %}
+  {% script name: "theronaldotheme-vendor-magnificpopup" , version: "1.1", at: "Foot" %}
+  {% script name:   "theronaldotheme-vendor-aos", at: "Foot" %}
+  {% script name: "theronaldotheme-vendor-animatenumber", at: "Foot" %}
+  {% script name: "TheRonaldoTheme-vendor-scrollax", at: "Foot" %}
+  {%script name: "theronaldotheme-vendor-main", at: "Foot" %}
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" dir={{Culture.Dir}}>
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+          {% assign owner = Site.Properties.Portfolio.Portfolio.Owner.Text | split: ' '| first  %}
+	      <a class="navbar-brand" href="/"><span>{{ owner | split: '' | first}}</span> {% for l in owner  offset: 1 %} {{l}} {% endfor %}</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+		 {% shape "menu", alias: "alias:main-menu", cache_id: "main-menu", cache_tag: "alias:main-menu" %}
+	    </div>
+	  </nav>
+	  {% render_section "Header", required: false %}
+	  {% render_section "Content" %}
+
+      {% render_section "Footer", required: false %}
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+    {% resources type: "FootScript" %}    
+
+  </body>
+</html>

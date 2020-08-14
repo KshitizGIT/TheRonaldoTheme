@@ -1,0 +1,23 @@
+﻿{% zone "Header" %}
+<section class="hero-wrap js-fullheight">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
+      <div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
+        <div class="text text-center">
+          <h1>{{ Site.Properties.Portfolio.Portfolio.Owner.Text}}</h1>
+          <span class="subheading">Welcome to my blog</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+{% endzone %}
+
+{% shape_remove_item Model.Content "Blog-Image" %}
+<div class="container">
+<section class="ftco-section">
+{{ Model.Content | shape_render }}
+</section>
+</div>

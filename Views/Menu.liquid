@@ -1,0 +1,7 @@
+<div class="collapse navbar-collapse" id="ftco-nav">
+    <ul class="navbar-nav nav ml-auto">
+        {% for item in Model.Items %}
+        {{ item | shape_render }}
+        {% endfor %}
+    </ul>
+</div>

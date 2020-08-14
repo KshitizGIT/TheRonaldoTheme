@@ -1,0 +1,14 @@
+﻿{% assign items = Model.ContentItem.Content.BagPart.ContentItems %}
+<div id="page-3" class= "page three">
+    <h2 class="heading">Skills</h2>
+    <div class="row progress-circle mb-5">
+        {% for item in items limit:3%}
+            {{ item  | shape_build_display: "Detail" | shape_render}}
+        {% endfor %}
+    </div>
+    <div class="row">
+        {% for item in items offset:3%}
+            {{ item  | shape_build_display: "Summary" | shape_render}}
+        {% endfor %}
+    </div>
+</div>
