@@ -3,6 +3,12 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <PackageId>Kshakya.OrchardCore.Themes</PackageId>
+    <Version>0.1-rc1</Version>
+    <Title>Ronaldo Theme </Title>
+    <Authors>Kshakya</Authors>
+    <Description>Implementation of Ronaldo Theme on OrchardCore</Description>
+    <PackageTags>orchardcore</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
