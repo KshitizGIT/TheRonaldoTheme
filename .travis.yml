@@ -1,0 +1,17 @@
+language: csharp
+mono: none
+dist: bionic
+dotnet: 3.1
+
+env:
+  global:
+    - DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
+    - DOTNET_CLI_TELEMETRY_OPTOUT: 1
+
+install:
+  - cd src/TheRonaldoTheme/ 
+  - dotnet restore
+
+script:
+  - cd src/TheRonaldoTheme/ 
+  - dotnet build -c Release
