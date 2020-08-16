@@ -9,7 +9,7 @@ env:
     - DOTNET_CLI_TELEMETRY_OPTOUT: 1
 
 install:
-  - cd src/TheRonaldoTheme/ 
+  - cd src/TheRonaldoTheme.OrchardCore/ 
   - dotnet restore
 
 script:

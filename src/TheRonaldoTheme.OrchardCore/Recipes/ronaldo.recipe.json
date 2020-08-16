@@ -1,10 +1,10 @@
 {
   "name": "Ronaldo",
   "displayName": "Ronaldo",
-  "description": "Provides a functional Blog with CMS features.",
+  "description": "Portfolio page with blog capabilities",
   "author": "Kshitiz Shakya",
-  "website": "",
-  "version": "1.0",
+  "website": "https://kshitizshakya.com.np",
+  "version": "1.0.0-rc2",
   "issetuprecipe": true,
   "categories": [ "default" ],
   "tags": [ "ronaldo" ],
@@ -16,7 +16,6 @@
     "categoriesContentItemId": "[js:uuid()]",
     "categoryTravelContentItemId": "[js:uuid()]",
     "landingContentItemId": "[js:uuid()]"
-    // "now": "[js: new Date().toISOString()]"
   },
 
   "steps": [
