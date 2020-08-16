@@ -2,9 +2,8 @@
 using Microsoft.Extensions.DependencyInjection;
 using OrchardCore.Modules;
 using OrchardCore.ResourceManagement;
-using OrchardCore.ShortCodes;
 
-namespace TheRonaldoTheme
+namespace TheRonaldoTheme.OrchardCore
 {
     public class Startup : StartupBase
     {

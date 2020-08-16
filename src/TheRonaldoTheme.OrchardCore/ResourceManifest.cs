@@ -1,6 +1,6 @@
 ﻿using OrchardCore.ResourceManagement;
 
-namespace TheRonaldoTheme
+namespace TheRonaldoTheme.OrchardCore
 {
     public class ResourceManifest : IResourceManifestProvider
     {
@@ -69,7 +69,7 @@ namespace TheRonaldoTheme
                 .SetUrl("~/TheRonaldoTheme/js/main.js")
                 .SetDependencies("TheRonaldoTheme-vendor-jQuery", "TheRonaldoTheme-vendor-jQuery-migrate",
                     "theronaldotheme-vendor-popper", "theronaldotheme-vendor-bootstrap", "theronaldotheme-vendor-jqueryeasing",
-                    "theronaldotheme-vendor-waypoints" , "theronaldotheme-vendor-animatenumber", "theronaldotheme-vendor-carousel", 
+                    "theronaldotheme-vendor-waypoints", "theronaldotheme-vendor-animatenumber", "theronaldotheme-vendor-carousel",
                     "theronaldotheme-vendor-magnificpopup", "theronaldotheme-vendor-aos", "theronaldotheme-vendor-animatenumber",
                     "theronaldotheme-vendor-scrollax", "theronaldotheme-vendor-stellar"
            );
