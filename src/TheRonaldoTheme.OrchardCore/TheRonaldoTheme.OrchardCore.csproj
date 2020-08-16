@@ -8,7 +8,8 @@
   <ItemGroup>
     <PackageReference Include="OrchardCore.Theme.Targets" Version="1.0.0-rc2-13450" />
     <PackageReference Include="OrchardCore.DisplayManagement" Version="1.0.0-rc2-13450" />
-    <PackageReference Include="OrchardCore.ResourceManagement" Version="1.0.0-rc2-13450" />
+    <PackageReference Include="OrchardCore.ResourceManagement.Abstractions" Version="1.0.0-rc2-13450" />
+
   </ItemGroup>
 
 </Project>
