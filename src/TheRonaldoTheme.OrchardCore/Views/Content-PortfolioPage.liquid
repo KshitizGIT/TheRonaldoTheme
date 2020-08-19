@@ -38,13 +38,13 @@
     <div class="row justify-content-center mb-5 pb-5">
       <div class="col-md-7 heading-section text-center ftco-animate">
         <h1 class="big big-2">Blog</h1>
-        <h2 class="mb-4">Our Blog</h2>
+        <h2 class="mb-4">My Blog</h2>
         <p> {{Site.Properties.Portfolio.Portfolio.BlogDescription.Text }}</p>
       </div>
     </div>
+    <div class="row d-flex">
     {% for blog in blogs %}
-     <div class="row d-flex">
-      <div class="col-md-4 d-flex ftco-animate">
+      <div class="col-md-4 d-flex ftco-animate fadeInUp ftco-animated">
         <div class="blog-entry justify-content-end">
           <a href="{{blog.ContentItem.Content.AutoroutePart.Path}}" class="block-20" style="background-image: url('{{blog.ContentItem.Content.BlogPost.Image.Paths.first | asset_url }}');">
           </a>
@@ -56,16 +56,15 @@
               <p class="mb-0">
                 <span class="mr-2">{{blog.PublishedUtc | date: "%B %d, %Y"}}</span>
                 <a href="#" class="mr-2">{{blog.Author }}</a>
-                <a href="#" class="meta-chat">
+                <!--<a href="#" class="meta-chat">
                   <span class="icon-chat"></span> 3
-                </a>
+                </a> -->
               </p>
             </div>
             <p>{{blog.ContentItem.Content.BlogPost.Subtitle.Text }}</p>
           </div>
         </div>
-      </div>
-   
+        </div>
     {% endfor %}
     </div>
   </div>
