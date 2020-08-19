@@ -1,19 +1,19 @@
-﻿{% assign blogs = Queries.RecentBlogPosts | query %}
+﻿{% assign format = "MMMM dd, yyyy" | t %}
+{% assign blogs = Queries.RecentBlogPosts | query %}
+<div class="sidebar-box ftco-animate">
+    <h3 class="heading-sidebar">Recent Blog</h3>
     {% for blog in blogs %}
-		
-        <div class="sidebar-box ftco-animate">
-              <h3 class="heading-sidebar">Recent Blog</h3>
               <div class="block-21 mb-4 d-flex">
-                <!--<a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>-->
+                <a class="blog-img mr-4" style="background-image: url({{blog.ContentItem.Content.BlogPost.Image.Paths.first | asset_url }});"></a>
                 <div class="text">
-                  
                   <h3 class="heading"><a href="{{blog.ContentItem | display_url }}">{{blog.ContentItem.Content.TitlePart.Title }}</a></h3>
                   <div class="meta">
-                    <div><a href="#"><span class="icon-calendar"></span> {{blog.PublishedUtc | date: "%B %d, %Y"}} </a></div>
+                    {% assign dateTime = "DateTime" | shape_new: utc: blog.PublishedUtc, format: format | shape_stringify %}
+                    <div><a href="#"><span class="icon-calendar"></span> {{dateTime}} </a></div>
                     <div><a href="#"><span class="icon-person"></span> {{blog.Author}}</a></div>
                     <!--<div><a href="#"><span class="icon-chat"></span> 19</a></div>-->
                   </div>
                 </div>
-              </div>
-
-{% endfor %}
+		  </div>
+	{% endfor %}
+  </div>
