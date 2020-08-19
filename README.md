@@ -1,6 +1,6 @@
-# Kshakya.OrchardCore.TheRonaldoTheme
+# TheRonaldoTheme
 
-[![Build Status](https://travis-ci.org/KshitizGIT/Kshakya.OrchardCore.Themes.png?branch=master)](https://travis-ci.org/KshitizGIT/Kshakya.OrchardCore.Themes)
+[![Build Status](https://travis-ci.org/KshitizGIT/TheRonaldoTheme.svg?branch=master)](https://travis-ci.org/KshitizGIT/TheRonaldoTheme)
 
 Theme for OrchardCore based on the [RonaldoTheme](https://colorlib.com/wp/template/ronaldo/)
 
