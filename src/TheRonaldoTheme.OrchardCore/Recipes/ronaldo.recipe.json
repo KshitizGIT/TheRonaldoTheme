@@ -67,7 +67,7 @@
         "OrchardCore.Widgets",
 
         // Themes
-        "TheRonaldoTheme",
+        "TheRonaldoTheme.OrchardCore",
         "TheAdmin",
         "SafeMode"
       ]
@@ -75,7 +75,7 @@
     {
       "name": "themes",
       "admin": "TheAdmin",
-      "site": "TheRonaldoTheme"
+      "site": "TheRonaldoTheme.OrchardCore"
     },
     {
       "name": "Queries",
