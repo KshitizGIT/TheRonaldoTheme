@@ -13,7 +13,7 @@ env:
   # Project name to pack and publish
   PROJECT_NAME: TheRonaldoTheme.OrchardCore
   # GitHub Packages Feed settings
-  GITHUB_FEED: https://nuget.pkg.github.com/KshitizGIT/
+  GITHUB_FEED: https://nuget.pkg.github.com/KshitizGIT/index.json
   GITHUB_USER: KshitizGIT
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   # Official NuGet Feed settings
