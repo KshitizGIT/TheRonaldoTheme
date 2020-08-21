@@ -2,10 +2,10 @@
 
     <PropertyGroup>
         <Copyright>Kshitiz Shakya</Copyright>
-        <Authors>Kshitiz Shakya</Authors>
-        <RepositoryUrl>https://github.com/KshitizGIT/Kshakya.OrchardCore.Themes</RepositoryUrl>
-        <PackageProjectUrl>https://github.com/KshitizGIT/Kshakya.OrchardCore.Themes</PackageProjectUrl>
-        <PackageLicenseUrl>https://github.com/KshitizGIT/Kshakya.OrchardCore.Themes/blob/master/LICENSE</PackageLicenseUrl>
+        <Authors>KshitizGIT</Authors>
+        <RepositoryUrl>https://github.com/KshitizGIT/TheRonaldoTheme</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/KshitizGIT/TheRonaldoTheme</PackageProjectUrl>
+        <PackageLicense>https://github.com/KshitizGIT/TheRonaldoTheme/License</PackageLicense>
         <TargetFramework>netcoreapp3.1</TargetFramework>
         <VersionSuffix Condition="'$(VersionSuffix)'!='' AND '$(BuildNumber)' != ''">$(VersionSuffix)-$(BuildNumber)</VersionSuffix>
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
