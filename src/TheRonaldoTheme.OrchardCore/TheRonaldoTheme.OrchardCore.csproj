@@ -6,9 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="OrchardCore.Theme.Targets" Version="1.0.0-rc2-14167" />
-    <PackageReference Include="OrchardCore.DisplayManagement" Version="1.0.0-rc2-14167" />
-    <PackageReference Include="OrchardCore.ResourceManagement.Abstractions" Version="1.0.0-rc2-14167" />
+    <PackageReference Include="OrchardCore.Theme.Targets" Version="1.0.0-rc2-14316" />
+    <PackageReference Include="OrchardCore.DisplayManagement" Version="1.0.0-rc2-14316" />
+    <PackageReference Include="OrchardCore.ResourceManagement.Abstractions" Version="1.0.0-rc2-14316" />
 
   </ItemGroup>
 
